@@ -1,0 +1,120 @@
+﻿@page "/"
+@using System.Net.Http.Headers;
+@using BlazorFileUpload.Shared;
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<PageTitle>Upload de arquivos</PageTitle>
+
+<h1>Upload de arquivos</h1>
+
+<InputFile OnChange="@OnInputFileChange" multiple />
+
+
+
+<table>
+    <ul>
+        
+        @foreach (var arquivo in listaArquivos)
+        {
+            <li>
+                Arquivo: @arquivo.FileName
+            </li>
+        }
+    </ul>
+</table>
+<button @onclick="@(() => ListarArquivos())">Listar Arquivos</button>
+
+@if(fileNames.Count > 0)
+{
+    <ul>
+        @foreach (var fileName in fileNames)
+        {
+            <li>
+                File: @fileName
+                <br>
+                <span>
+                    Stored File Name: @GetStoredFileName(fileName) 
+                </span>
+                <button @onclick="@(() => DownloadFile(GetStoredFileName(fileName), fileName))">Download file</button>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private int maxAllowedFiles = int.MaxValue;
+    private long maxFileSize = long.MaxValue;
+    private List<string> fileNames = new();
+    private List<ResultadoUpload> resultadoUpload = new();
+    private List<ResultadoUpload> listaArquivos = new();
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        using var content = new MultipartFormDataContent();
+
+        foreach(var file in e.GetMultipleFiles(maxAllowedFiles))
+        {
+            var fileContent = new StreamContent(file.OpenReadStream(maxFileSize));
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
+
+            fileNames.Add(file.Name);
+
+            content.Add(
+                content: fileContent,
+                name: "\"files\"",
+                fileName: file.Name
+            );
+        }
+
+        var response = await Http.PostAsync("/api/Arquivo", content);
+        var novoUploadResult = await response.Content.ReadFromJsonAsync<List<ResultadoUpload>>();
+
+        if(novoUploadResult is not null)
+        {
+            resultadoUpload = resultadoUpload.Concat(novoUploadResult).ToList();
+        }
+    }
+
+    private string? GetStoredFileName(string fileName)
+    {
+        var uploadResult = resultadoUpload.SingleOrDefault(f => f.FileName == fileName);
+        if(uploadResult is not null)        
+            return uploadResult.StoredFileName;
+
+
+        return "Arquivo não encontrado.";
+    }
+
+    private async Task DownloadFile(string storedFileName, string originalFileName)
+    {
+        var response = await Http.GetAsync($"/api/Arquivo/{storedFileName}");
+
+        if (!response.IsSuccessStatusCode)
+        {
+            await JS.InvokeVoidAsync("alert", "Arquivo não encontrado.");
+        }
+        else
+        {
+            var fileStream = response.Content.ReadAsStream();
+            using var streamRef = new DotNetStreamReference(stream: fileStream);
+            await JS.InvokeVoidAsync("downloadFileFromStream", originalFileName, streamRef);
+        }
+    }
+
+    private async Task ListarArquivos()
+    {
+        var response = await Http.GetAsync($"/api/Arquivo");        
+        var listaDeArquivos = await response.Content.ReadFromJsonAsync<List<ResultadoUpload>>();
+
+        if(listaDeArquivos is not null)
+        {
+            listaArquivos = listaArquivos.Concat(listaDeArquivos).ToList();
+        }
+        foreach(var arquivos in listaArquivos)
+        {
+            Console.WriteLine(arquivos.FileName);
+        }       
+    }
+}
+

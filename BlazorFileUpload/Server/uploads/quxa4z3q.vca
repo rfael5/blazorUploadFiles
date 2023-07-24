@@ -1,0 +1,153 @@
+COMPUTAÇÃO EM NUVEM: Fundamentos de Computação em núvem
+
+- Explique o conceito de virtualização e Hypervisor.
+A virtualização é um conceito que descreve o uso de vários sistemas operacionais em um único servidor.
+
+Hypervisor é um sistema operacional que permite a divisão de um servidor em partes, permitindo assim a virtualização.
+
+
+- Explique as 5 características essenciais do serviço em nuvem
+1. Autoatendimento sob demanda.
+2. Amplo acesso à rede.
+3. Acesso a um pool de recursos.
+4. Elasticidade dinâmica.
+5. Serviço mensurável.
+
+1. Autoatendimento sob demanda: O serviço está disponível assim que o usuário desejar.
+2. Amplo acesso à rede: Recursos da rede acessiveis sem necessidade de infraestrutura especializada.
+3. Acesso a um pool de recursos: Serviço disponível para vários usuários diferentes.
+4. Elasticidade dinâmica: A disponibilidade do serviço aumenta ou diminui de acordo com o tanto que o usuário usa,
+nunca sobrando nem faltando.
+5. Serviço mensurável: Capacidade de medir exatamente quais recursos são usados.
+
+
+- Explique os três modelos de serviço da computação em nuvem.
+1. IaaS (Infraestrutura como serviço)
+2. PaaS (Plataforma como serviço)
+3. SaaS (Software como serviço)
+
+1. Infraestrutura como serviço: Parte física à cargo do fornecedor e
+parte virtual à cargo do cliente.
+
+2. Plataforma como serviço: Aplicações e dados à cargo do cliente e resto
+a cargo do fornecedor.
+
+3. software como serviço: Tudo a cargo do fornecedor.
+
+
+- Qual a diferença entre virtualização e paravirtualização?
+	- Na paravirtualização o sistema operacional visitante precisa passar por modificações
+para funcionar na maquina virtual enquanto na virtualização isso não é necessário.
+	- Na paravirtualização o sistema operacional visitante não pode acessar diretamente o hardware, este
+só pode ser acessado a partir do dominio 0.
+
+
+- Explicar os conceitos de:
+1. Conteinerização
+2. Serverless Computing
+3. Provedor de serviços de aplicação
+4. Grid Computing
+5. Utility Computing
+
+1. Conteinerização: Enquanto na virtualização, a maquina virtual é dividida em vários sistemas operacionais, na
+conteinerização um único sistema operacional é dividido em partes, e em cada uma dessas partes uma aplicação pode
+funcionar. Como funciona sobre um único kernel, aplicativos em conteinerização são mais leves, iniciam mais rápido
+e usam uma pequena parte da memória, pois não precisam iniciar um sistema operacional inteiro.
+
+2. Serverless Computing: Essa permite o armazenamento de funções em servidores terceirizados já prontos. Isso diminui
+o trabalho pois a equipe só precisa se preocupar em desenvolver as funções e não em configurar o hardware.
+
+3. Provedor de serviços de aplicação: São aplicações que oferecem os serviços de seus sistemas para outras empresas.
+Assim essas empresas não precisam desenvolver suas próprias aplicações para essas funções. Um exemplo disso são as
+aplicações de e-mails.
+
+4. Grid Computing: São vários servidores que juntam suas capacidades, e que são usados por vários usuários diferentes,
+que compartilham da capacidade aumentada dos servidores.
+
+5. Utility Computing: É um serviço de computação que funciona sob demanda. O usuário só paga pelo que ele usa, nem mais
+e nem menos.
+
+
+______________________________________________________________________________________________________________________________
+
+COMPUTAÇÃO EM NUVEM: Mecanismos e Arquitetura de Computação em Nuvem
+
+- Explique o que são e dê exemplos três componentes da arquitetura do 
+front-end?
+1. Software
+2. Interface
+3. Dispositivo e rede de comunicação
+
+- O que é cloud runtime?
+
+______________________________________________________________________________________________________________________________
+PENSAMENTO COMPUTACIONAL
+
+- Qual a diferença entre linguagem compilada e dinamica/interpretada. Lembre-se do exemplo da receita de bolo.
+Na linguagem compilada, o código é traduzido para linguagem de maquina diretamente na maquina de origem,
+já nas linguagens dinamicas, o código é traduzido por um outro programa, o interpretador.
+
+Fazendo uma analogia com uma receita de bolo. A linguagem compilada é como se você pegasse uma receita de bolo
+escrita originalmente no grego mas já traduzida para sua lingua. A linguagem interpretada é como se você tivesse
+um amigo que fala grego, e ele fosse traduzindo a receita para você linha por linha.
+
+FONTE: https://www.freecodecamp.org/portuguese/news/linguagens-de-programacao-interpretadas-x-compiladas-qual-e-a-diferenca/#:~:text=Em%20uma%20linguagem%20compilada%2C%20a,l%C3%AA%20e%20executa%20o%20c%C3%B3digo.
+
+- O que é JIT?
+Compilação just-in-time, é a compilação durante a execução do programa, e não antes.
+
+_______________________________________________________________________________________________________________________________________
+PYTHON BASICO
+
+- Explique o que é amarração (binding) e diga qual a diferença entre as amarrações de tipo estaticas e dinâmicas
+Amarração é a ligação entre entidades de programação. Por exemplo, uma variavel chamada número com o valor numerico 100 tem os seguintes tipos
+de amarração:
+1. O valor 100,
+2. O tipo int/numerico,
+3. O nome "numero",
+4. O endereço do espaço que ela ocupa na memória.
+
+As amarrações de tipo estáticas são estabelecidas antes da execução do programa e não podem ser alteradas. As amarrações de tipo dinâmicas são
+estabilicidas durante a execução do programa e podem ser alteradas.
+
+________________________________________________________________________________________________________________________________________
+PYTHON ORIENTADO A OBJETOS
+
+- Explique o que é uma classe abstrata
+Uma classe abstrata é uma classe que não pode ser instanciada no sistema. Ela é usada apenas para ser a classe pai de outras através da
+herança, simplificando assim o sistema e diminuindo a repetição de codigo.
+
+_________________________________________________________________________________________________________________________________________
+PYTHON EM OUTROS PARADIGMAS
+- Explique o que são funções puras e dados inalteraveis e explique a importancia desses para o sistema.
+Funções puras são funções que só dependem do valor do parâmetro para devolver um resultado. Em uma função pura, o resultado da operação 
+sempre será o mesmo independente do momento em que ela for executada, o que evita efeitos indesejaveis.
+
+- Qual a diferença entre concorrencia e paralelismo?
+Paralelismo executa várias tarefas ao mesmo tempo, enquanto na concorrencia, as tarefas são executadas uma de cada vez.
+
+- Explique o que são threads e o que são processos.
+Processo é um programa em execução. Thread é uma linha de execução dentro de um processo.
+
+- Quais são as três etapas do KDD? Quais etapas compõem a etapa de pré-processamento.
+As três etapas são Pré-processamento, Mineração e Pós-processamento.
+
+As etapas que compões o pré-processamento são: Seleção, preparação e transformação. 
+
+- Explique a função das etapas de mineração e pós-processamento no KDD.
+A etapa de mineração consiste em encontrar padrões em meio aos dados sendo analisados.
+
+O pós-processamento consiste em pegar os dados obtidos na etapa anterior e torná-los inteligiveis.
+
+- Explique a diferença entre mineração supervisionada e não-supervisionada.
+Os algoritmos de mineração supervisionados conseguem encontrar a relação entre os dados baseados nas informações já contidas nesses dados,
+eles meio que já sabem como separar os dados.
+
+Já na mineração não-supervisionada os dados não foram classificados previamente e o algoritmo precisa encontrar uma relação por si só.
+
+__________________________________________________________________________________________________________________________________________
+LINGUAGEM DE MARCAÇÃO DE HIPERTEXTO - HTML
+
+- Qual a função das tags semânticas?
+As tags semânticas definem a função e o significado do conteúdo dentro da tag.
+

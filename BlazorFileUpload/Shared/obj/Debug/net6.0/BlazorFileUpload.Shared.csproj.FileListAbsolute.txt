@@ -1,0 +1,12 @@
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\bin\Debug\net6.0\BlazorFileUpload.Shared.deps.json
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\bin\Debug\net6.0\BlazorFileUpload.Shared.dll
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\bin\Debug\net6.0\BlazorFileUpload.Shared.pdb
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.csproj.AssemblyReference.cache
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.AssemblyInfoInputs.cache
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.AssemblyInfo.cs
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.csproj.CoreCompileInputs.cache
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.dll
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\refint\BlazorFileUpload.Shared.dll
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\BlazorFileUpload.Shared.pdb
+C:\projetos\CSharp\BlazorFileUpload\BlazorFileUpload\Shared\obj\Debug\net6.0\ref\BlazorFileUpload.Shared.dll

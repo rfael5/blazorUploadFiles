@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\obj\\Debug\\net6.0\\build-gz\\t9JHlADF.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorFileUpload.Client.styles.css",
+      "PackagePath": "staticwebassets\\BlazorFileUpload.Client.styles.css"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\projetos\\CSharp\\BlazorFileUpload\\BlazorFileUpload\\Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorFileUpload.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BlazorFileUpload.Client.props",
+      "PackagePath": "build\\BlazorFileUpload.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorFileUpload.Client.props",
+      "PackagePath": "buildMultiTargeting\\BlazorFileUpload.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BlazorFileUpload.Client.props",
+      "PackagePath": "buildTransitive\\BlazorFileUpload.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
